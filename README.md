@@ -33,6 +33,12 @@ CREATE TABLE tablename (
 );
 ```
 
+### Data Types in PostgreSQL
+- **Numeric Types:** `INT`, `NUMERIC`, `SERIAL`
+- **String Types:** `CHAR`, `VARCHAR`, `TEXT`
+- **Date Types:** `TIME`, `DATE`, `TIMESTAMP`
+- **Other Types:** `BOOLEAN`
+
 ### Inserting Data into a Table
 ```sql
 INSERT INTO tablename (column1, column2, column3)
@@ -42,6 +48,10 @@ VALUES (value1, value2, value3);
 ### Selecting Data from a Table
 - **Select all data:** `SELECT * FROM tablename;`
 - **Select specific columns:** `SELECT column1, column2 FROM tablename;`
+
+### Sorting and Filtering Data
+- **Sort data:** `SELECT * FROM tablename ORDER BY column;`
+- **Filter data:** `SELECT * FROM tablename WHERE condition;`
 
 ### Updating Data in a Table
 ```sql
@@ -58,5 +68,10 @@ WHERE condition;
 - **Drop a table:** `DROP TABLE tablename;`
 - **Drop a database:** `DROP DATABASE dbname;`
 
+### Understanding SQL Relationships
+- **One-to-One:** Unique relationship between two tables.
+- **One-to-Many:** A single row in one table is linked to multiple rows in another.
+- **Many-to-Many:** Multiple rows in one table linked to multiple rows in another.
+
 ## Conclusion
-This guide covers the basic commands to get you started with PostgreSQL. For more advanced usage, refer to the official [PostgreSQL documentation](https://www.postgresql.org/docs/).
+This guide covers the basic commands and concepts to get you started with PostgreSQL. For more advanced usage, refer to the official [PostgreSQL documentation](https://www.postgresql.org/docs/).
